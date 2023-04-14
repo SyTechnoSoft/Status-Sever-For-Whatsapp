@@ -1,5 +1,6 @@
 package com.statusseverforwhatsapp;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -55,6 +56,7 @@ public class StatusActivity extends AppCompatActivity {
 
 
 
+        @RequiresApi(api = Build.VERSION_CODES.O)
         private void checkWhatsAppPermission () {
             // Choose a directory using the system's file picker.
             Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);

@@ -15,6 +15,8 @@ public class WhatsappStatusModel {
         this.fileName = fileName;
     }
 
+
+
     public String getName() {
         return name;
     }
